@@ -1,5 +1,6 @@
 import React from 'react';
 import ProfileSection from './ProfileSection';
+import PeliculaListado from './PeliculasListado';
 
 const Main = () => {
   return (
@@ -8,10 +9,13 @@ const Main = () => {
       <p className="text-lg">
         Aquí vamos a colocar el contenido principal de la aplicación. Agregaremos
         textos, imágenes, formularios, etc.
-      </p>
+      </p>     
+      <ProfileSection />     
       
-      <ProfileSection />
-
+      <div className="flex flex-col items-center  bg-blue-900 text-white py-2">
+        <h1 className="text-2xl font-bold mb-4">Listado de Películas</h1>
+        <PeliculaListado />
+      </div>
     </main>
   );
 };
