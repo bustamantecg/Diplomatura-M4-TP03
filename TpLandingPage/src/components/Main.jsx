@@ -2,6 +2,7 @@ import React from 'react';
 import ProfileSection from './ProfileSection';
 import PeliculaListado from './PeliculasListado';
 import Contador from './Contador';
+import PeliculasCalificar from './PeliculasCalificar';
 
 const Main = () => {
   return (
@@ -12,8 +13,9 @@ const Main = () => {
       
       <div className="flex flex-col items-center  bg-blue-900 text-white py-2">
         <h1 className="text-2xl font-bold mb-4">Listado de Películas</h1>
-        <PeliculaListado />
+        <PeliculaListado />        
         <Contador />
+        
       </div>
       
     </main>

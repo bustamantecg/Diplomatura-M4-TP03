@@ -1,4 +1,7 @@
 import { useState } from "react";
+import PeliculasCalificar from "./PeliculasCalificar";
+import Contador from "./Contador";
+
 
 const peliculas = [
   { id: 1, titulo: "La batalla de Riddick: Pitch Black" },
@@ -19,15 +22,16 @@ function PeliculaListado() {
         {mostrar ? "Ocultar Películas" : "Mostrar Películas"}
       </button>
 
-      {mostrar && (
+      {mostrar && (        
         <ul className="bg-gray-800 p-4 rounded-lg text-left">
           {peliculas.map((pelicula) => (
             <li key={pelicula.id} className="p-2 border-b last:border-b-0">
-              {pelicula.id}) {pelicula.titulo}
+              {pelicula.id}) {pelicula.titulo} <PeliculasCalificar />
             </li>
           ))}
-        </ul>
+        </ul>        
       )}
+      
     </div>
   );
 }

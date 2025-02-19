@@ -89,9 +89,6 @@ const NavBar = () => {
                 />
               )
             }
-
-
-
           </svg>
         </button>
 
