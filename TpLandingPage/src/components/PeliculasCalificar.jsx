@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion } from "framer-motion"; 
-import { FullSeparator } from "./utility/separator";
 
 function PeliculasCalificar() {
   const [contador, setContador] = useState(0);
@@ -8,8 +7,6 @@ function PeliculasCalificar() {
 
   return (
     <div className="px-2.5 m-3">
-   
-    
       <div className="flex space-x-4 justify-center">
       <p className="px-2 py-2 font-bold text-center">Puntuación: {contador}</p>
         {/* Botón Incrementar con animación individual */}
@@ -20,7 +17,7 @@ function PeliculasCalificar() {
           }}
           animate={{ rotate: rotacion.incrementar }}
           transition={{ duration: 0.5 }}
-          className="px-4 py-2 bg-green-500 hover:bg-green-700 rounded-lg font-bold"
+          className="px-4 py-2 bg-green-500 hover:bg-green-700 rounded-lg font-bold cursor-pointer"
         >
           +
         </motion.button>
@@ -33,7 +30,7 @@ function PeliculasCalificar() {
           }}
           animate={{ rotate: rotacion.decrementar }}
           transition={{ duration: 0.5 }}
-          className="px-4 bg-red-500 hover:bg-red-700 rounded-lg font-bold "
+          className="px-4 bg-red-500 hover:bg-red-700 rounded-lg font-bold cursor-pointer"
         >
           -
         </motion.button>
@@ -46,7 +43,7 @@ function PeliculasCalificar() {
           }}
           animate={{ rotate: rotacion.reiniciar }}
           transition={{ duration: 0.5 }}
-          className="px-4 py-2 bg-yellow-500 hover:bg-yellow-700 rounded-lg font-bold "
+          className="px-4 py-2 bg-yellow-500 hover:bg-yellow-700 rounded-lg font-bold cursor-pointer"
         >
           0
         </motion.button>

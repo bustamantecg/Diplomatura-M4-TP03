@@ -1,7 +1,5 @@
 import { useState } from "react";
 import PeliculasCalificar from "./PeliculasCalificar";
-import Contador from "./Contador";
-
 
 const peliculas = [
   { id: 1, titulo: "La batalla de Riddick: Pitch Black" },
@@ -37,3 +35,5 @@ function PeliculaListado() {
 }
 
 export default PeliculaListado;
+
+
